@@ -2,9 +2,8 @@ class Solution {
 public:
     bool checkInclusion(string s1, string s2) {
         map<char,int> m;
-        vector<int> x;
         for(int i=0;i<s1.length();i++)
-            m[p[i]]++;
+            m[s1[i]]++;
         int l=0,r;
         int cnt=s1.length();
         for(int r=0;r<s2.length();r++)
